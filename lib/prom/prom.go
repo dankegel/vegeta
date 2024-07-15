@@ -9,7 +9,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 // Metrics encapsulates Prometheus metrics of an attack.
