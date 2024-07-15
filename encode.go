@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"strings"
 
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 const (
@@ -59,7 +59,7 @@ func encodeCmd() command {
 	output := fs.String("output", "stdout", "Output file")
 
 	fs.Usage = func() {
-		fmt.Fprintln(os.Stderr, encodeUsage)
+		fmt.Fprint(os.Stderr, encodeUsage)
 	}
 
 	return command{fs, func(args []string) error {

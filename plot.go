@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/signal"
 
-	vegeta "github.com/tsenart/vegeta/v12/lib"
-	"github.com/tsenart/vegeta/v12/lib/plot"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
+	"github.com/dankegel/vegeta/v12/lib/plot"
 )
 
 const plotUsage = `Usage: vegeta plot [options] [<file>...]
@@ -37,8 +37,7 @@ Examples:
   echo "GET http://:80" | vegeta attack -name=50qps -rate=50 -duration=5s > results.50qps.bin
   cat results.50qps.bin | vegeta plot > plot.50qps.html
   echo "GET http://:80" | vegeta attack -name=100qps -rate=100 -duration=5s > results.100qps.bin
-  vegeta plot results.50qps.bin results.100qps.bin > plot.html
-`
+  vegeta plot results.50qps.bin results.100qps.bin > plot.html`
 
 func plotCmd() command {
 	fs := flag.NewFlagSet("vegeta plot", flag.ExitOnError)

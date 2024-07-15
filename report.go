@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 const reportUsage = `Usage: vegeta report [options] [<file>...]
@@ -44,7 +44,7 @@ func reportCmd() command {
 	buckets := fs.String("buckets", "", "Histogram buckets, e.g.: \"[0,1ms,10ms]\"")
 
 	fs.Usage = func() {
-		fmt.Fprintln(os.Stderr, reportUsage)
+		fmt.Fprint(os.Stderr, reportUsage)
 	}
 
 	return command{fs, func(args []string) error {

@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tsenart/vegeta/v12/internal/resolver"
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	"github.com/dankegel/vegeta/v12/internal/resolver"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 const connectToFormat = "srcAddr:port:@dstAddr:port[,dstAddr:port,...][;srcAddr:port@dstAddr:port[,...]"
