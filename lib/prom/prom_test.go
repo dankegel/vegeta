@@ -9,7 +9,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/prometheus/model/textparse"
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 func TestMetrics_Observe(t *testing.T) {

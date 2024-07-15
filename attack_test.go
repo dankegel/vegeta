@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	vegeta "github.com/tsenart/vegeta/v12/lib"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 func TestHeadersSet(t *testing.T) {

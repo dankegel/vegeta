@@ -17,9 +17,9 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/tsenart/vegeta/v12/internal/resolver"
-	vegeta "github.com/tsenart/vegeta/v12/lib"
-	prom "github.com/tsenart/vegeta/v12/lib/prom"
+	"github.com/dankegel/vegeta/v12/internal/resolver"
+	vegeta "github.com/dankegel/vegeta/v12/lib"
+	prom "github.com/dankegel/vegeta/v12/lib/prom"
 )
 
 const connectToFormat = "srcAddr:port:@dstAddr:port[,dstAddr:port,...][;srcAddr:port@dstAddr:port[,...]"
