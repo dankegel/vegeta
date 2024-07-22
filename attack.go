@@ -16,10 +16,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/prometheus/client_golang/prometheus"
 	"github.com/dankegel/vegeta/v12/internal/resolver"
 	vegeta "github.com/dankegel/vegeta/v12/lib"
 	prom "github.com/dankegel/vegeta/v12/lib/prom"
+	"github.com/prometheus/client_golang/prometheus"
 )
 
 const connectToFormat = "srcAddr:port:@dstAddr:port[,dstAddr:port,...][;srcAddr:port@dstAddr:port[,...]"

@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	vegeta "github.com/dankegel/vegeta/v12/lib"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/prometheus/model/textparse"
-	vegeta "github.com/dankegel/vegeta/v12/lib"
 )
 
 func TestMetrics_Observe(t *testing.T) {
@@ -59,10 +59,10 @@ func TestMetrics_Observe(t *testing.T) {
 	}
 
 	want := map[string]struct{}{
-		"request_seconds":    struct{}{},
-		"request_bytes_in":   struct{}{},
-		"request_bytes_out":  struct{}{},
-		"request_fail_count": struct{}{},
+		"request_seconds":    {},
+		"request_bytes_in":   {},
+		"request_bytes_out":  {},
+		"request_fail_count": {},
 	}
 
 	t.Log(string(data))
